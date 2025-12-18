@@ -1,0 +1,138 @@
+:root {
+    --primary-color: #003087;
+    /* Spectrum-like blue */
+    --accent-color: #0099d8;
+    --text-color: #333;
+    --bg-color: #f4f6f8;
+    --article-bg: #ffffff;
+    --font-heading: 'Georgia', serif;
+    --font-body: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+header {
+    background-color: #fff;
+    padding: 1.5rem 0;
+    border-bottom: 4px solid var(--primary-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-family: var(--font-heading);
+    display: block;
+    text-align: center;
+}
+
+main {
+    margin: 3rem auto;
+}
+
+.blog-post {
+    background: var(--article-bg);
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.meta {
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.highlight-box {
+    background-color: #e6f3ff;
+    border-left: 5px solid var(--accent-color);
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 4px;
+}
+
+.cta-container {
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.cta-link {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1.2rem 2.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.cta-link:hover {
+    background-color: #00205b;
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #999;
+    font-size: 0.9rem;
+    border-top: 1px solid #eee;
+    margin-top: 3rem;
+}
+
+@media (max-width: 600px) {
+    .blog-post {
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
